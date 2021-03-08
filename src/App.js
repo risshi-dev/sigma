@@ -24,14 +24,18 @@ function App() {
 
     const formHandler = (e) => {
 							e.preventDefault();
-              console.log(form)
-							setForm(initial);
+              if(form.number.length===10)
+                  {console.log(form)
+							    setForm(initial);}
+              else{
+                alert("Invalid No.")
+              }
 						
     }
 
   return (
 			<div className="App">
-				<form onSubmit={formHandler}>
+				<form onSubmit={formHandler} >
 					<div>
 						<label>
 							Prefix
@@ -64,7 +68,7 @@ function App() {
 								type="number"
 								pattern="[0-9]*"
 								onChange={(e) => {
-									setForm({ ...form, number: e.target.value });
+									  return setForm({ ...form, number: e.target.value })
 								}}
 								required
 								value={form.number}

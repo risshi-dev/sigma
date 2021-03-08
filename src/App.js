@@ -24,7 +24,7 @@ function App() {
 
     const formHandler = (e) => {
 							e.preventDefault();
-              if(form.number.length===10)
+              if(form.number.length===10 )
                   {console.log(form)
 							    setForm(initial);}
               else{
@@ -54,7 +54,7 @@ function App() {
 							Full Name
 							<br />{" "}
 							<input
-								onChange={(e) => setForm({ ...form, fullName: e.target.value })}
+								onChange={(e) => setForm({ ...form, fullName: e.target.value.replace(/[0-9]/g,'') })}
 								type="text"
 								required
 								value={form.fullName}

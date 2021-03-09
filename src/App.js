@@ -35,6 +35,7 @@ function App() {
 
   return (
 			<div className="App">
+				<h1>Form Validator</h1>
 				<form onSubmit={formHandler} >
 					<div>
 						<label>
@@ -176,7 +177,7 @@ function App() {
 							<br />
 							<select
 								onChange={(e) => setForm({ ...form, customerType: e.target.value })}
-								value={form.prefix}
+								value={form.customerType}
 							>
 								<option value="New">New</option>
 								<option value="Old">Old</option>

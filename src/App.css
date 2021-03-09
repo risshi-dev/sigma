@@ -1,33 +1,66 @@
+h1{
+  color: #fff;
+  margin:20px 40px;
+}
+
+form{
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-column-gap: 50px;
+    width: 60vw;
+    margin: auto;
+    padding:20px 10vw;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: stretch;
+  }
+
+label{
+  font-weight: 200;
+  color:#fff;
+}
 input{
+  padding:5px;
   width: 400px;
-  height: 25px;
+  height: 30px;
   margin:10px auto;
+  border:none;
+  border-radius:3px;
 }
 input:focus{
   outline:none
 }
 select{
-  height: 25px;
-  width:100px
+  padding:5px;
+  height: 30px;
+  width:100px;
+  margin:10px auto;
+  border: none;
+  border-radius:3px;
+}
+select:focus{
+  outline: none;
 }
 
 #button{
-    margin: 10px 100px;
+    margin: 30px 100px;
     height: 40px;
     width: 200px;
     padding: 5px;
     border: none;
-    background-color: #089eff;
+    background-color:#3371d5 ;
     border-radius: 5px;
     color: #fff;
     font-size: 20px;
     letter-spacing: 4px;
     font-weight: 100;
+    transition: 0.3s ease;
 }
-form{
-  display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
-    grid-column-gap: 30px;
-    width: 80vw;
-    margin: 20px auto;
-  }
+#button:hover{
+  cursor: pointer;
+  background-image: linear-gradient(to right,#0d4aad, #2562c4c2) ;
+}

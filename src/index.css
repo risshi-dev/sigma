@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #74ebd5;  /* fallback for old browsers */
+background: radial-gradient( #5095e4 60%,#2f6ed3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+letter-spacing: 2px;
 }
 
 code {
